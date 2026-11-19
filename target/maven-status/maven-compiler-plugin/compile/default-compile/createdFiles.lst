@@ -1,0 +1,6 @@
+com/store_mgm/controller/CategoryController.class
+com/store_mgm/model/Category.class
+com/store_mgm/dao/CategoryDao.class
+com/store_mgm/model/Product.class
+com/store_mgm/controller/ProductController.class
+com/store_mgm/dao/ProductDao.class

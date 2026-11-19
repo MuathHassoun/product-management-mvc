@@ -1,0 +1,6 @@
+/home/muath-hassoun/VS_StormProjects/product-management-mvc/product-management-system/src/main/java/com/store_mgm/model/Product.java
+/home/muath-hassoun/VS_StormProjects/product-management-mvc/product-management-system/src/main/java/com/store_mgm/controller/ProductController.java
+/home/muath-hassoun/VS_StormProjects/product-management-mvc/product-management-system/src/main/java/com/store_mgm/model/Category.java
+/home/muath-hassoun/VS_StormProjects/product-management-mvc/product-management-system/src/main/java/com/store_mgm/controller/CategoryController.java
+/home/muath-hassoun/VS_StormProjects/product-management-mvc/product-management-system/src/main/java/com/store_mgm/dao/ProductDao.java
+/home/muath-hassoun/VS_StormProjects/product-management-mvc/product-management-system/src/main/java/com/store_mgm/dao/CategoryDao.java

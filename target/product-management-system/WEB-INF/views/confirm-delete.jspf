@@ -1,0 +1,33 @@
+<dialog class="confirm-dialog" aria-labelledby="confirm-delete-title" aria-describedby="confirm-delete-message">
+    <div class="confirm-dialog__content">
+        <span class="eyebrow">Confirm deletion</span>
+        <h2 id="confirm-delete-title">Delete this item?</h2>
+        <p class="confirm-dialog__message" id="confirm-delete-message"></p>
+        <div class="confirm-dialog__actions">
+            <button type="button" class="btn btn-outline-secondary" data-confirm-cancel autofocus>Cancel</button>
+            <a class="btn btn-danger-confirm" data-confirm-action>Delete</a>
+        </div>
+    </div>
+</dialog>
+
+<script>
+    (() => {
+        const dialog = document.querySelector(".confirm-dialog");
+        const message = dialog.querySelector(".confirm-dialog__message");
+        const cancelButton = dialog.querySelector("[data-confirm-cancel]");
+        const confirmAction = dialog.querySelector("[data-confirm-action]");
+
+        document.addEventListener("click", (event) => {
+            const deleteLink = event.target.closest("a[data-confirm-delete]");
+            if (!deleteLink) return;
+
+            event.preventDefault();
+            message.textContent = deleteLink.dataset.confirmDelete;
+            confirmAction.href = deleteLink.href;
+            dialog.showModal();
+        });
+
+        cancelButton.addEventListener("click", () => dialog.close());
+        dialog.addEventListener("close", () => confirmAction.removeAttribute("href"));
+    })();
+</script>
